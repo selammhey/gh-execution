@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Echo
-        run: echo "Deploying..."
+        run: echo "Deploying & Uploading"
