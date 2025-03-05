@@ -10,6 +10,12 @@ jobs:
       matrix:
         node-versions: ['16.x','18.x','20.x']
         operating-system: [ubuntu-latest,windows-latest]
+        include: 
+          node-versions: '14.x'
+          operating-system: ubuntu-latest
+        include: 
+          node-versions: '18.x'
+          operating-system: windows-latest
     runs-on: ${{ matrix.operating-system }}
     steps:
       - name: Get Code
