@@ -13,7 +13,7 @@ jobs:
         include: 
           node-versions: '14.x'
           operating-system: ubuntu-latest
-        include: 
+        exclude: 
           node-versions: '18.x'
           operating-system: windows-latest
     runs-on: ${{ matrix.operating-system }}
